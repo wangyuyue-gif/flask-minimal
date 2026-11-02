@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
-    <title>Minimal Flask App</title>
+
+    <title>Flask Theme Switcher</title>
 </head>
 <body>
-    <h1>Hello, Flask!</h1>
+    <main class="card">
+        <h1>Hello, Flask!</h1>
+        <p>这是我的第一个 Git 工作流练习项目。</p>
+
+        <button id="theme-toggle" type="button">
+            切换到深色主题
+        </button>
+    </main>
 </body>
 </html>
